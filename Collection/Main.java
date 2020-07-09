@@ -7,10 +7,14 @@ import java.util.logging.Logger;
 
 public class Main {
     public static void main(String ...args){
-        ArrayList<Integer> arrayList = new ArrayList<>();
-        arrayList.add(1);
-        System.out.println(arrayList.size());
-        ArrayList<Integer> arrayList2 = new ArrayList<>();
-        System.out.println(arrayList.toString()+", "+arrayList2.toString());
+//        String str1 = new String("1")+new String("5");
+//        str1.intern();
+//        String str2 = "15";
+//        System.out.println(str1 == str2);
+
+        String str3 = new String("1")+new String("2");
+        str3.intern();
+        String str4 = "12";
+        System.out.println(str3 == str4);
     }
 }
